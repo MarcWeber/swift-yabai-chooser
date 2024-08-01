@@ -11,17 +11,24 @@ usage
 =====
 yabai-choser "TITLE" space1 sapce2 space3 space3
 
-Then you can either choose label of existing or enter a new one.
-command-{1,2,3} shortcuts are available to choose the first 10 items
-Filtering and Tab completion works on names.
+Type some chars to filter
 
-This is my first Swift project.
+Use command-{1,2,3} shortcuts to select out of first 10
+
+Or hit Enter to choose your typed word
 
 yabai
 =====
 When used with yabai of course you want to use managed=off to cause floating/
 on top mode
 
-I checked quit a lot even fltk-rs but that consumed even 10 MB more.
-So Swift seems to be good enough for this job
+~/.yabairc
+```
+yabai -m rule --add app="^yabai-chooser$" manage=off
+```
 
+language choice
+===============
+I checked quit a lot even fltk-rs but that consumed even 10 MB more.
+So Swift seems to be good enough for this job even though making the command-*
+keys work was a struggle.

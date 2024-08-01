@@ -77,7 +77,7 @@ struct Switcher: View {
                 }
             }
             Text(matched.dropFirst(10).joined(separator: ", "))
-            Text("type characters to start filtering type command-1 command-2 to select the nth or hit return to type new")
+            Text("Type characters to start filtering type command-1 command-2 to select the nth or hit return to type new")
         }
         .padding()
     }
